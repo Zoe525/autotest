@@ -1,6 +1,6 @@
 import time
 from appium import webdriver
-
+#test
 des={
     'platformName': 'Android',
     'platformVersion': '10', #填写android的系统版本
