@@ -1,6 +1,6 @@
 import time
 from appium import webdriver
-#testadfasdfASDFASDFASDFADFASDF
+#test
 des={
     'platformName': 'Android',
     'platformVersion': '10', #填写android的系统版本
@@ -20,6 +20,10 @@ driver.find_element_by_id('com.android.mms:id/action_start_new_conversation').cl
 time.sleep(1)
 driver.find_element_by_id('com.android.mms:id/recipient_text_view').send_keys('13811346164')
 driver.keyevent(66)
+time.sleep(1)
+driver.find_element_by_id("com.android.mms:id/compose_message_text").send_keys("文本")
+time.sleep(1)
+driver.find_element_by_id("com.android.mms:id/send_message_button").click()
 time.sleep(1)
 
 
