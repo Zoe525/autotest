@@ -17,7 +17,7 @@ discover=unittest.defaultTestLoader.discover(start_dir=cases_path,
 main_suite=unittest.TestSuite()
 main_suite.addTest( discover )
 
-file=open(html_path,'wb',encoding='UTF-8')
+file=open(html_path,'wb')
 html_runner=HTMLTestRunner.HTMLTestRunner(stream=file,
                                           title='C2C的自动化测试',
                                           description='回归测试')
